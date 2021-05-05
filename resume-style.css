@@ -1,0 +1,318 @@
+p, ul li {
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  
+  h1, h2, h3, h4, nav ul li, button, form {
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  .center{
+      text-align: center;
+  }
+  .logo{
+      width: 300px;
+      margin-left: 30px;
+  }
+  
+  .quote{
+      font-size: 30px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  
+  header {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 70px;
+      display: flex;
+      background: #0e0e0e;
+      z-index: 1;
+  }
+  
+  header > * {
+      flex-grow: 1;
+      padding: 14px;
+  }
+  
+  .main-nav ul {
+      display: inline-flex;
+      float: right;
+      list-style: none;
+  }
+  
+  .main-nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      transition: background 300ms;
+      border-radius: 3px;
+  }
+  
+  .main-nav ul li a:hover {
+      background: #c93db1;
+      /* border-radius: 3px; */
+  }
+  
+  .banner {
+      height: 65vh;
+      background-attachment: fixed;
+      background-size: cover;
+      color: white;
+      /* text-align: center; */
+      display: flex;
+      text-align: center;
+      align-items: center;
+      text-shadow: 1px 2px 15px white;
+  }
+  
+  .banner1 {
+      background: url(images/banner1.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+  }
+  
+  .banner > * {
+      width: 100%;
+  }
+  .banner {
+      height: 65vh;
+      background-attachment: fixed;
+      background-size: cover;
+      color: white;
+      /* text-align: center; */
+      display: flex;
+      text-align: center;
+      align-items: center;
+      text-shadow: 1px 2px 15px white;
+  }
+  
+  .banner1 {
+      background: url(images/anhbia2.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+  }
+  
+  .banner > * {
+      width: 100%;
+  }
+  
+  
+  .container {
+      margin-top: 10px;
+      margin: 35px auto;
+      width: 95%;
+      max-width: 1200px;
+  }
+
+  .front-three {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 10px;
+  }
+  
+  .col-img img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+  }
+  
+  .col-img {
+      height: 50vh;
+  }
+  
+  header {
+      border-bottom: 2px solid #4a4a4a;
+  }
+
+  .container-footer {
+    margin: 5px auto;
+    width: 95%;
+    max-width: 1200px;
+}
+
+.front-three-footer {
+    display:flex;
+    justify-content: center;
+  /*   vertical-align: center; */
+    grid-gap: 20px;
+}
+.col-img-footer {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50px 50px 50px 50px;
+}
+  /* --------------------------------------------------------LOGIN--------------------------------------------------------- */
+  .login { /* CSS Grid căn bản */
+      display: grid; /* Thuộc tính display xác định loại hiển thị của thành phần. */
+      grid-template-columns: 1fr 1fr; /* chia cột theo kiểu hàng chờ */
+      margin: 25px 25px;
+   /*    grid-gap: 6%; /* bộc cho div nhỏ lại */
+  }
+  
+  .login-img{
+      margin: 25px 5px 25px 25px;
+  }
+  
+  .taikhoan {
+      /* top right bottom left */
+      margin: 25px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
+      width: 96%;
+      padding: 10px; /* thêm khoảng không cho thành phần (là phần trống để nhập vào) */
+      border: 2px solid lightgrey; /* viền ô nhập */
+      box-shadow: 1px 1px 2px lightgrey inset;
+  }
+  
+  button {
+      background: #348fda; /*màu mặc định các nút body*/
+      color: white;
+      width: 100%;
+      padding: 10px;/* thêm khoảng không cho button */
+      border: none;
+      border-radius: 5px;
+      margin: 5px 0px;
+      
+  }
+  
+  button:hover { /* màu các nút body đổi khi đưa chuột vào */
+      background: #c93db1;
+      box-shadow: 1px 1px 5px grey;
+  }
+  
+  .linkstyle{ /* Kiểu chữ của button khi add link */
+      color: white;
+      text-decoration: none;
+  }
+  /* --------------------------------------------------------LOGIN--------------------------------------------------------- */
+  
+  .container > div {
+      margin: 30px 0px; /* Thuộc tính margin canh lề cho thành phần. */
+  }
+  
+  .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+  }
+  
+  .gallery img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+  }
+  
+  footer {
+      background: #0e0e0e;
+      padding: 50px;
+      color: white;
+      text-align: center;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  /* Table Breakpoint 780px */
+  @media screen and (max-width: 780px) {
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    nav {
+      position: absolute;
+      top: 72px;
+      right: 0px;
+      height: 100vh;
+      background-image: url(https://cdn.wallpapersafari.com/19/19/UuaniF.png);
+      /* background: #232323; */
+      background-size: 73%;
+  }
+  
+  nav ul {
+      display: block !important;
+      padding: 45px;
+  }
+  
+  nav ul li {
+      margin: 38px 10px;
+  }
+  
+  .hamburger {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      height: 40px;
+      width: 40px;
+      font-size: 40px;
+      color: white;
+      display: block;
+  }
+  
+  input.hamburger:checked ~ nav {
+      /* display: none; */
+      /* background: orange; */
+      right: 0px;
+  }
+  
+  nav {
+      right: -220px;
+      transition: right 500ms;
+  }
+  
+  input.hamburger {
+      opacity: 0;
+      cursor: pointer;
+  }
+  }
+  
+  /* Mobile Breakpoint 550px */
+  @media screen and (max-width: 550px) {
+    .front-three, .login, .gallery{
+      display: block;
+    }
+    button {
+      margin: 15px 0;
+    }
+  }
+
+  .container-1{
+      text-align: center;
+      font-size: 40px;
+      margin-top: 100px;
+  }
+
+.body{
+    margin: 70px 10%;
+    border: dotted 1px grey;
+    padding: 10px;
+    box-shadow: 1px 1px 3px green;
+}
+.logo1{
+    border-radius: 50px 50px 50px 50px;
+    margin-top: 20px;
+    margin-right: 170px;
+    display: block;
+    width: 150px;
+    padding: 10px;
+    box-shadow: 0px 0px 38px grey;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+}
+@media screen and (max-width: 900px) {
+    .logo1{
+      display: block;
+    }
+  }
+
